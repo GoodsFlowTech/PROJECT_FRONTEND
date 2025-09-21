@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshayasriharini S | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(15,23,42,0.95);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h1 { font-size: 20px; color: #38bdf8; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #94a3b8;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 40px 40px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 { font-size: 28px; margin-bottom: 20px; color: #38bdf8; }
+
+    .skills, .projects, .education {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+
+    .contact form {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+    button {
+      background: #38bdf8;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #0284c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akshayasriharini S</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi 👋, I’m <strong>Akshayasriharini S</strong>, a Computer Science and Engineering student at 
+    <strong>SRM Institute of Science and Technology, Trichy</strong>. I’m passionate about exploring how 
+    technology can solve real-world problems and open up new possibilities.
+  </p>
+
+  <p>
+    My interests span across <strong>software development, web design, data science, and artificial intelligence</strong>.  
+    I love transforming ideas into projects, whether it’s an IoT-powered inventory system, a real-time 
+    analytics dashboard, or an AI-based decision support model. For me, coding is not just about logic—it’s 
+    about <em>creativity and impact</em>.
+  </p>
+
+  <p>
+    Alongside projects, I enjoy research and writing. I’ve explored topics in <strong>DBMS, algorithms, IoT, 
+    and machine learning</strong>, publishing and drafting papers that turn complex concepts into accessible knowledge.  
+    Research has sharpened my patience, critical thinking, and problem-solving mindset.
+  </p>
+
+  <p>
+    But my journey isn’t only technical—I also focus on self-growth. I believe that consistency and balance 
+    matter just as much as skills. I stay active through workouts and intermittent fasting, which keep me 
+    energized and focused. I also work on improving my English communication to express ideas confidently in 
+    both academic and professional spaces.
+  </p>
+
+  <p>
+    Looking forward, my immediate goal is to <strong>secure an internship with a top company</strong>, where I can 
+    apply my learning in real-world environments. Long term, I aim to become a <strong>skilled software developer 
+    and data scientist by 2027</strong>, contributing to projects that make life smarter and more efficient.
+  </p>
+
+  <p>
+    Beyond academics, I’m deeply inspired by my family, who motivate me to grow every day. I also enjoy 
+    reading, exploring creative ideas, and staying curious about emerging technologies.
+  </p>
+
+  <p><em>In short, I’m a learner, a builder, and a dreamer—driven by curiosity, persistence, and the belief 
+    that technology can make a real difference.</em></p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education">
+    <div class="card">
+      <h3>SRM Institute of Science and Technology, Trichy</h3>
+      <p>B.Tech in Computer Science and Engineering</p>
+      <p><em>2022 – 2027</em></p>
+      <p><strong>Currently in 3rd Year | CGPA: 8.37</strong></p>
+    </div>
+    <div class="card">
+      <h3>Sri Ramakrishna Krishna Public School</h3>
+      <p>Higher Secondary Education</p>
+      <p><em>Completed in 2022</em></p>
+    </div>
+  </div>
+</section>
+
+ 
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">Java (Learning Full-Stack)</div>
+      <div class="card">DBMS & SQL</div>
+      <div class="card">IoT</div>
+      <div class="card">Machine Learning (Basics)</div>
+      <div class="card">Research & Technical Writing</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">📦 Stock Plus Advanced – IoT-based Goods Tracking System with Cloud & Voice Control</div>
+      <div class="card">🧠 Crack Detection DSS – AI + IoT solution for Civil Infrastructure</div>
+      <div class="card">📊 Real-time Site Analytics – Web Dashboard using DBMS + IoT</div>
+      <div class="card">🌐 Interactive Portfolio Website – Personal Resume in Web Form</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p style="margin-top:15px;">📧 Email: <a href="mailto:akshayasriharini@gmail.com" style="color:#38bdf8;">akshayasriharini@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/" target="_blank" style="color:#38bdf8;">linkedin.com/in/akshayasriharini</a></p>
+    <p>💻 GitHub: <a href="https://github.com/" target="_blank" style="color:#38bdf8;">github.com/akshayasriharini</a></p>
+  </section>
+
+  <script>
+    // Reveal animation on scroll
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100) sec.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
+
+
